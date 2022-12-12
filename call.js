@@ -1,18 +1,17 @@
-// what are the callback functions in javascript?
+ 
 
-function  x(y){
+// ***imp***
 
-    console.log("when x is called it will print this")
-    y()
+ function attachEventlistenerAndFormingAClosure(){
 
-}
-x(function y(){
+     let count=1;
+       const a=  document.querySelector("#click")
+     
+       a.addEventListener("click",function(){
+         console.log ("it is invoked/call back by js when we click the button so it is nothing but a call back function inside our addeventlister just like settime out")
+     
+         console.log( "clicked"+" "+count ++ +" "+"time")
+       })
+ }
 
-    console.log("when y is invoked inside x this will be printed")
-
-})// y is a call back function as it is upto the x when to call the function in the code.
-
-setTimeout( function l () {
-    console.log("callback function called after 5 sec until then it stored inside the space created by js ")
-    
-}, 5000);// here the function l is a call back function as it is called inside the settimeout function and can be called back sometime in the code using the timer .
+ attachEventlistenerAndFormingAClosure()
