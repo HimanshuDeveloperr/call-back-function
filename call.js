@@ -1,17 +1,78 @@
- 
+// // // setTimeout(() => console.log('timer1 expired'), 1000)
 
-// ***imp***
 
- function attachEventlistenerAndFormingAClosure(){
 
-     let count=1;
-       const a=  document.querySelector("#click")
-     
-       a.addEventListener("click",function(){
-         console.log ("it is invoked/call back by js when we click the button so it is nothing but a call back function inside our addeventlister just like settime out")
-     
-         console.log( "clicked"+" "+count ++ +" "+"time")
-       })
- }
+// // // setTimeout(() => console.log('timer2 expired'), 0)
 
- attachEventlistenerAndFormingAClosure()
+
+
+// // // function x(y) {
+
+// // // console.log('inside x');
+
+// // // y();
+
+// // // }
+
+
+
+// // // x(function y(){
+
+// // // setTimeout(() => console.log('inside y'), 0)
+
+// // // })
+
+
+// // setTimeout(() => console.log('timer1 expired'), 1000)
+
+
+
+// // setTimeout(() => console.log('timer2 expired'), 0)
+
+
+
+// // function x(y) {
+
+// // console.log('inside x');
+
+// // y();
+
+// // }
+
+
+
+// // x(function y(){
+
+// // console.log('inside y')
+
+// // })
+
+// setTimeout(() => console.log('timer expired'), 1000)
+
+
+
+// function x(y) {
+
+// console.log('inside x');
+
+// y();
+
+// }
+
+
+
+// x(function y(){
+
+// console.log('inside y')
+
+// })
+
+document.getElementById("click").
+addEventListener ("click",function(){
+    console.log("clicked me")
+})
+
+
+addEventListener ('DOMContentLoaded',function(){
+    console.log("DOM has loaded",count)
+})
