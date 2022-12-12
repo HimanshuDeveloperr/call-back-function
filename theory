@@ -1,12 +1,5 @@
-what are callback function in javascript?
 
-when you pass a function into another function is known as the callback function.
-due to callback we can do asynchrounous things in javascript.
 
-what is blocking main thread?
+why is it neccessary to remove eventlisteners and garbage collected?
 
-as we know that every function is executed with the use of call stack in js  and if any operation trys to block that execution from happening for sometime it is known as blocking the main thread.
-
-*** we should never block our main thread cause it will stop the other lines of code from executing in js  to encounter this we use call back functions like settimeout to put large no of codes which takes time for their execution which will make our js some what asynchronous by storing the callback function in the settimeout function till the timer goes off and then proceed with its execution by pushing it in our call stack**
-
-callback functions are possible only because of first class functions in js.
+because eventlisteners are heavy and takes space and memory even when they are not in use and form closures and atteched to lexical scope which make our execution and code slow we had to free up space when we are not using them so they can be garbage collected.
